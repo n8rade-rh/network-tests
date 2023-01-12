@@ -1,1 +1,8 @@
-BLARGH
+---
+- name: Make a simply test playbook
+  hosts: local
+  tasks:
+  
+    - name: Test
+      debug:
+        msg: test
