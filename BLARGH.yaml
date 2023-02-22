@@ -1,5 +1,5 @@
 ---
-- name: Make a simply test playbook
+- name: Make a simple test playbook
   hosts: localhost
   tasks:
   
