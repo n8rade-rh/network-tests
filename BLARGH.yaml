@@ -1,8 +1,0 @@
----
-- name: Make a simple test playbook
-  hosts: localhost
-  tasks:
-  
-    - name: Show version testing
-      cisco.ios.ios_command:
-        commands: show version
