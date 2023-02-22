@@ -1,6 +1,6 @@
 ---
 - name: Make a simple test playbook
-  hosts: localhost
+  hosts: Ciscooooo
   tasks:
   
     - name: Show version testing
@@ -10,7 +10,9 @@
     - name: Capture /tmp/test-cisco.txt
       shell: cat /tmp/test-cisco.txt
       register: cisco-output
+      delegate_to: localhost
       
     - name: Print the var
       debug:
         var: cisco-output.stdout
+      delegate_to: localhost
