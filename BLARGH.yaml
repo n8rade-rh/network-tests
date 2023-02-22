@@ -1,6 +1,6 @@
 ---
 - name: Make a simply test playbook
-  hosts: Ciscooooo
+  hosts: localhost
   tasks:
   
     - name: Show version testing
