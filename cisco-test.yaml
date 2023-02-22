@@ -1,5 +1,5 @@
 ---
-- name: Make a simple test playbook
+- name: Cisco show version play
   hosts: Ciscooooo
   tasks:
   
@@ -7,12 +7,14 @@
       cisco.ios.ios_command:
         commands: show version
 
+- name: Print output of /tmp/test-cisco.txt
+  hosts: localhost
+  tasks:
+
     - name: Capture /tmp/test-cisco.txt
       shell: cat /tmp/test-cisco.txt
       register: cisco-output
-      delegate_to: localhost
       
     - name: Print the var
       debug:
         var: cisco-output.stdout
-      delegate_to: localhost
