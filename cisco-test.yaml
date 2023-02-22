@@ -13,8 +13,8 @@
 
     - name: Capture /tmp/test-cisco.txt
       shell: cat /tmp/test-cisco.txt
-      register: cisco-output
+      register: cisco_output
       
     - name: Print the var
       debug:
-        var: cisco-output.stdout
+        var: cisco_output.stdout
